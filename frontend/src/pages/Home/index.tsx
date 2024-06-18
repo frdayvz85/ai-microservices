@@ -29,7 +29,7 @@ const Home: React.FC<ToolCardsProps> = ({ tools }) => {
                 </p>
             </div>
             <div className={styles.dashboardCard}>
-                {tools.map((tool, index) => (
+                {tools.map((tool) => (
                     <div onClick={() => navigate(tool.href)} key={tool.href} className={styles.card}>
                         <div className={styles.cardBox}>
                             <div className={cn(styles.p2, styles.wFit, styles.roundedMd, tool.bgColor)}>
