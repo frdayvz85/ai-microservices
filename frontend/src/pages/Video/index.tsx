@@ -33,7 +33,6 @@ const Video: React.FC = () => {
       setVideo(response.data.result[0]);
       setInputValue("");
       setIsLoading(false);
-      console.log("test")
     } catch (error: any) {
       if (error?.response?.status === 403) {
         toast.error(
