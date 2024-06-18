@@ -23,4 +23,5 @@ app.include_router(router, tags=["Music"])
 
 @app.get("/", tags=["Root"])
 async def read_root():
+    print("test")
     return {"message": "Music generate: Welcome to this fantastic app!"}

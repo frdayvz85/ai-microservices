@@ -23,4 +23,5 @@ app.include_router(router, tags=["Image"])
 
 @app.get("/", tags=["Root"])
 async def read_root():
+    print("test")
     return {"message": "Image generate: Welcome to this fantastic app!"}
