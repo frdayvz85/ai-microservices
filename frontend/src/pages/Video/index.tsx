@@ -18,6 +18,7 @@ const Video: React.FC = () => {
   const handleGenerate = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Button clicked!");
+    console.log("Test")
     console.log(import.meta.env.VITE_API_URL);
     setIsLoading(true);
     setVideo("");

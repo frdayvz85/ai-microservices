@@ -71,6 +71,7 @@ app.use('/music-generate', proxyMiddlewareMusic);
 app.get("/", (req: Request, res: Response) => {
     const message = `API is working as expected - API gateway: ${os.hostname()}`
     console.log(message)
+    console.log("Test")
     res.status(200).json({message});
 });
 
