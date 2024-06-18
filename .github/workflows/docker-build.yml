@@ -37,7 +37,7 @@ jobs:
             echo "service_updated=true" >> $GITHUB_ENV
           else
             echo "service_updated=false" >> $GITHUB_ENV
-
+          fi
       - name: Build and push Docker image
         if: env.service_updated == 'true'
         uses: docker/build-push-action@v2
